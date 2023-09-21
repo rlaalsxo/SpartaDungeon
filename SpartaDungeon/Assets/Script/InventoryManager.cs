@@ -15,7 +15,9 @@ public class InventoryManager : MonoBehaviour
         {
             for(int i = 0; i < items.Count; i++)
             {
-                Image item = Instantiate(Resources.Load<Image>("Item/" + items[i].name), inventory.transform, false);
+                Image image = Resources.Load<Image>("Item/" + items[i].name);
+                Image item = Instantiate(image, inventory.transform, false);
+                item.name = image.name;
             }
         }
     }

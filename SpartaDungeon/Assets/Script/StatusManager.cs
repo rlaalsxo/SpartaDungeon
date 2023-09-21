@@ -11,6 +11,7 @@ public class StatusManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI deftxt;
     [SerializeField] TextMeshProUGUI hptxt;
     [SerializeField] TextMeshProUGUI level;
+    public TextMeshProUGUI gold;
     [SerializeField] Image exp;
     private void Awake()
     {
@@ -23,5 +24,10 @@ public class StatusManager : MonoBehaviour
         deftxt.text = GameManager.Instance.player.CurrentStats.def.ToString("N1");
         hptxt.text = GameManager.Instance.player.CurrentStats.maxHealth.ToString();
         exp.fillAmount = ((int)GameManager.Instance.player.CurrentStats.exp / (GameManager.Instance.player.CurrentStats.level * 100));
+        GoldUpdate();
+    }
+    public void GoldUpdate()
+    {
+        gold.text = GameManager.Instance.player.CurrentStats.gold.ToString();
     }
 }

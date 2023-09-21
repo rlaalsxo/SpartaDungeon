@@ -11,8 +11,21 @@ public class Item
 }
 public class Weapon : Item
 {
-    public Weapon(string name)
+    public Weapon(string _name, int _attack, int _hp, float _def)
     {
-        
+        name = _name;
+        attack = _attack;
+        hp = _hp;
+        def = _def;
+    }
+}
+public class Armor : Item
+{
+    public Armor(string _name, int _attack, int _hp, float _def)
+    {
+        name = _name;
+        attack = _attack;
+        hp = _hp;
+        def = _def;
     }
 }

@@ -6,13 +6,16 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    public Image Exp;
+    public Image ButtonUI;
     public Image Status;
     public Image Inventory;
     public Image Shop;
     private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
         StatusManager.Instance.StatusUpdate();
     }
     public void OpenStatus()
@@ -20,10 +23,12 @@ public class UIManager : MonoBehaviour
         if(Status.gameObject.activeSelf)
         {
             Status.gameObject.SetActive(false);
+            ButtonUI.gameObject.SetActive(true);
         }
         else
         {
             Status.gameObject.SetActive(true);
+            ButtonUI.gameObject.SetActive(false);
         }
     }
     public void OpenInven()
@@ -31,10 +36,12 @@ public class UIManager : MonoBehaviour
         if (Inventory.gameObject.activeSelf)
         {
             Inventory.gameObject.SetActive(false);
+            ButtonUI.gameObject.SetActive(true);
         }
         else
         {
             Inventory.gameObject.SetActive(true);
+            ButtonUI.gameObject.SetActive(false);
         }
     }
     public void OpenShop()
@@ -42,10 +49,12 @@ public class UIManager : MonoBehaviour
         if (Shop.gameObject.activeSelf)
         {
             Shop.gameObject.SetActive(false);
+            ButtonUI.gameObject.SetActive(true);
         }
         else
         {
             Shop.gameObject.SetActive(true);
+            ButtonUI.gameObject.SetActive(false);
         }
     }
 }

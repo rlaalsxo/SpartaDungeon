@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9085498918445739521}
   - component: {fileID: 519946622230236007}
   - component: {fileID: -3134060462495195807}
+  - component: {fileID: 7546296112040374961}
   m_Layer: 5
   m_Name: "\uC88B\uC740 \uAC11\uC637"
   m_TagString: Item
@@ -94,3 +95,16 @@ MonoBehaviour:
   Hp: 20
   Def: 5
   gold: 1000
+  eq: 0
+--- !u!114 &7546296112040374961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3872991304845049841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a887671c1726b14595ee66f8f5924ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

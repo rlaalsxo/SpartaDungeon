@@ -28,11 +28,11 @@ public class BuyManager : MonoBehaviour
         {
             if(itemstat.Type == 0)
             {
-                PlayerManager.Instance.items.Add(new Weapon(itemstat.name, itemstat.Attack, itemstat.Hp, itemstat.Def));
+                PlayerManager.Instance.items.Add(new Weapon(itemstat.name, itemstat.Attack, itemstat.Hp, itemstat.Def, false));
             }
             else if (itemstat.Type == 1)
             {
-                PlayerManager.Instance.items.Add(new Armor(itemstat.name, itemstat.Attack, itemstat.Hp, itemstat.Def));
+                PlayerManager.Instance.items.Add(new Armor(itemstat.name, itemstat.Attack, itemstat.Hp, itemstat.Def, false));
             }
             GameManager.Instance.player.CurrentStats.gold -= itemstat.gold;
             StatusManager.Instance.GoldUpdate();

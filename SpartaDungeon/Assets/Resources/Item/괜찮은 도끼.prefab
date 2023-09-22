@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5647621930495691117}
   - component: {fileID: 8606029232183807076}
   - component: {fileID: -574014153157696565}
+  - component: {fileID: -2552200209156063373}
   m_Layer: 5
   m_Name: "\uAD1C\uCC2E\uC740 \uB3C4\uB07C"
   m_TagString: Item
@@ -94,3 +95,16 @@ MonoBehaviour:
   Hp: 3
   Def: 3
   gold: 1000
+  eq: 0
+--- !u!114 &-2552200209156063373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772864410414990483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a887671c1726b14595ee66f8f5924ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -8,5 +8,6 @@ public class ItemStat : MonoBehaviour
     public int Hp;
     public float Def;
     public int gold;
+    public bool eq;
 }
      

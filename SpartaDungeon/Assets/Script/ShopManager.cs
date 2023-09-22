@@ -27,7 +27,7 @@ public class ShopManager : MonoBehaviour, IPointerDownHandler
         if(eventData.pointerEnter.tag == "Item")
         {
             ItemStat item = eventData.pointerEnter.gameObject.GetComponent<ItemStat>();
-            if(BuyWindow.gameObject.activeSelf == false)
+            if(BuyWindow.gameObject.activeSelf == false && UIManager.Instance.Shop.gameObject.activeSelf == true)
             {
                 BuyWindow.gameObject.SetActive(true);
                 BuyWindow.itemstat = item;
